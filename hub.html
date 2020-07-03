@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="./css/hub.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOLMES FF</title>
+</head>
+
+<body>
+    <header>
+        <a href="https://www.youtube.com/user/Adrenaline"><img src="./img/menu/logotipo.png" alt="logotipo"></a>
+    </header>
+
+    <div class="texto1">
+        <div class="titulo">
+            <h4>+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+</h4>
+            <h1>HOLMES FAST-FOOD</h1>
+            <h4>[Londres, Rua backer, número 221B]</h4>
+            <h4>BY: João Pedro Gambirasio da Rosa</h4>
+            <h3>O melhor fast-food da América Latina</h3>
+            <h4>+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+</h4>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="texto2">
+            <h1>Receita</h1>
+            <h3>Nesses tempos de quarentena compartilhamos a receita de um dos nosso sanduiches mais deliciosos,
+                aproveitem</h3>
+            <img src="./img/receita/images.jpg" alt="receitinha show de bola">
+            <p>
+            <h2>Ingredientes</h2> <br> - Um bife de jogador de free fire "leia-se BOVINO". <br> - Queijo cheddar. <br>
+            - Queijo mussarela. <br> - Pão de sanduiche.
+            </p>
+            <br>
+            <p>
+            <h2>Modo de preparo</h2> <br>
+            - Cozinhar o bife a 100000 graus em fogo baixo <br> - Jogar no pão "cuidado para não queimar os dedo meu
+            rapaz" <br> - Jogar os quejos aleatoriamente <br> - E Vuala, está pronto
+            </p>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="slideshow-container">
+            <div class="mySlides1">
+                <img src="./img/slider/banner1.png" style="width:45%">
+            </div>
+
+            <div class="mySlides1">
+                <img src="./img/slider/banner2.png" style="width:45%">
+            </div>
+
+            <div class="mySlides1">
+                <img src="./img/slider/banner3.png" style="width:45%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="car">
+            <table border="3" align="center">
+                <th>Nosso Cardápio</th>
+                <td>
+                <td><img src="./img/cardapio/1.jpg" width="275px" height="183px" alt="lanche1">
+                    <p>MINI COMBO <br> - Hamburguer médio <br> - Batata frita <br> [R$ 20,00]</p>, <img
+                        src="./img/cardapio/2.jpg" width="275px" height="183px" alt="lanche2">
+                    <p>BIG COMBO <br> - Hamburguer grande <br> - Batata frita <br> [R$ 18,00]</p>
+                </td>
+                <td><img src="./img/cardapio/3.jpg" width="275px" height="183px" alt="lanche3">
+                    <p>FAT GUY <br> - Hamburguer grande com maionese e beicon <br> [R$ 16,99]</p>, <img
+                        src="./img/cardapio/4.jpg" width="275px" height="183px" alt="lanche4">
+                    <p>CHICKEN NUGGET <br> - Hamburguer com nugget de frango <br> [R$ 14,99]</p>
+                </td>
+                <td><img src="./img/cardapio/5.jpg" width="275px" height="183px" alt="lanche5">
+                    <p>F.A.T <br> - Hamburguer gigante com beicon moido e molho barbekill <br> [R$ 21,85]</p>, <img
+                        src="./img/cardapio/6.jpg" width="275px" height="183px" alt="lanche6">
+                    <p>MINI <br> - Hamburguer pequeno com queijo <br> [R$ 12,99]</p>
+                </td>
+                </td>
+            </table>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="formulario">
+        <form>
+            Primeiro Nome:
+            <input type="text" name="PrimeiroNome">
+            <br>
+            Segundo Nome:
+            <input type="text" name="SegundoNome">
+            <br>
+            Seu sexo:
+            <br>
+            <input type="radio" name="sex" value="male"> Masculino
+            <br>
+            <input type="radio" name="sex" value="female"> Feminino
+            <br>
+            E-mail:
+            <input type="text" name="Email">
+            <br>
+            Deixe sua mensagem:
+            <input type="text" name="msn">
+            <br>
+            <form name="input" action="html_form_action.asp" method="get">
+                Avaliação de 1 a 10
+                <input type="text" name="user">
+                <input type="submit" value="Enviar">
+            </form>
+    </div>
+
+    <script>
+        var slideIndex = [1, 1];
+        var slideId = ["mySlides1", "mySlides2"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+
+        function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+        }
+
+        function showSlides(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) { slideIndex[no] = 1 }
+            if (n < 1) { slideIndex[no] = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex[no] - 1].style.display = "block";
+        }
+    </script>
+    <footer>
+        <div id="container">
+            <div class="topo">
+                <ul>
+                    <div id="zero">
+                        <li><a href="https://www.youtube.com/user/Adrenaline"><img src="./img/menu/logotipo.png" alt="logotipo" width="25%" height="15%"></a>
+                        </li>
+                    </div>
+                    <div id="one">
+                        <li><a href="https://www.youtube.com/watch?v=ApXoWvfEYVU"> Facebook, <br></a></li>
+                    </div>
+                    <div id="two">
+                        <li><a href="https://www.youtube.com/watch?v=ApXoWvfEYVU"> Instragram, <br> </a></li>
+                    </div>
+                    <div id="three">
+                        <li><a href="https://www.youtube.com/watch?v=Fxh1rd_LTdg">4002-8922</a></li>
+                    </div>
+                </ul>
+                </ul>
+            </div>
+    </footer>
+</body>
+
+</html>

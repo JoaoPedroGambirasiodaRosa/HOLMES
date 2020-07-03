@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+}
+
+body {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/000/589/609/original/pixel-art-cheeseburger-seamless-background.png);
+    align-content: center;
+}
+
+footer {
+    background-color: #222;
+}
+
+table {
+    text-align: justify;
+    padding: 25px;
+    background-color: #ffcf6e;
+    color: white;
+    border-color: white;
+}
+
+.texto1 {
+    padding: 50px 5px;
+    background-color: rgb(37, 35, 35);
+    text-align: center;
+    padding: 15px 5px;
+    color: white;
+    border-bottom: #ffcf6e;
+    border-top: #ffcf6e;
+}
+
+.texto2 {
+    text-align: center;
+    color: white;
+    border-bottom: #ffcf6e;
+    border-top: #ffcf6e;
+}
+
+#zero {
+    text-align: left;
+}
+
+#one {
+    text-align: center;
+}
+
+#two {
+    text-align: center;
+}
+
+#three {
+    text-align: center;
+    color: #ffcf6e;
+}
+
+#container {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/000/589/609/original/pixel-art-cheeseburger-seamless-background.png);
+    display: both;
+}
+
+.topo {
+    height: 200px;
+    background-color: #ffcf6e;
+    box-shadow: 0 0 08px;
+    margin: 10px;
+}
+
+.topo p {
+    color: #000;
+}
+
+.topo ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222;
+}
+
+.topo li {
+    float: left;
+}
+
+.topo li a {
+    display: block;
+    color: #ffcf6e;
+    text-align: center;
+    padding: 15px 5px;
+    text-decoration: none;
+    font-size: 65px;
+}
+
+.topo li a:hover {
+    background-color: #333333;
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    color: black;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+header {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 30vw 0 5vw;
+    position: relative;
+    transform-style: inherit;
+    width: 10vw;
+}
+
+header h1 {
+    margin-top: -100px;
+}
+
+header, header::before {
+    background: 50% 50% / cover;
+}
+
+header::before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+
+header * {
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.mySlides1, .mySlides2 {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: -webkit-sticky;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.formulario {
+    color: #ffcf6e;
+    background-color: #222;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 5px;
+}
+
+.titulo {
+    color: #ffcf6e;
+}
